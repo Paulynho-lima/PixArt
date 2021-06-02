@@ -9,7 +9,7 @@
     display: table;
     padding: 5px;
     margin-left: 400px;
-    
+    display: inline;
 }
 .color{
     display: table-cell;
@@ -33,9 +33,11 @@
 .cor4 {
     background-color:green;
 }
-.pixel {
-    border: black solid 1px;
+.cor5{
     background-color: white;
+}
+.pixel {
+    
     display: table-cell;
     display: inline-block;
     width: 40px;
@@ -72,5 +74,5 @@
 .selected {
     width: 100px;
     height: 100px;
-    background-color:black
+   
 }      
