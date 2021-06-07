@@ -4,6 +4,13 @@
 .borde {
     border: black solid 1px;
 }
+#clear-board{
+   display: block;
+    margin-left: 600px;
+    margin-top: 10px;
+    width: 80px;
+    height: 40px;
+}
 
 #color-palette {
     display: table;
@@ -11,6 +18,7 @@
     margin-left: 400px;
     display: inline;
 }
+
 .color{
     display: table-cell;
     display: inline-block;
@@ -43,13 +51,14 @@
     width: 40px;
     height: 40px;
     padding: 5px;
-    margin-top: -4px;
+    margin-top: -3px;
 }
 
 #pixel-board {
     display: table;
     padding: 5px;
     margin-left: 495px;
+    margin-top: 20px;
 }
 .pex{
     display: table-row;
@@ -74,5 +83,6 @@
 .selected {
     width: 100px;
     height: 100px;
+    border: blue solid 3px;
    
 }      
