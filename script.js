@@ -20,20 +20,20 @@ function changeColor() {
 let colorPalette = document.querySelector('#color-palette');
 colorPalette.addEventListener('click', changeColor);
 
-function paintPixel (event){
+function paintPixel (event) {
     let select = document.querySelector('.selected');
     event.target.style.backgroundColor = window.getComputedStyle(select).backgroundColor; 
 }
 
 let dom = document.getElementsByClassName('pixel')
-    for(let index2 = 0; index2 < dom.length; index2 +=1){
+    for(let index2 = 0; index2 < dom.length; index2 +=1) {
         let dom2 = dom[index2];
     dom2.addEventListener('click', paintPixel);
     }
 
-function clear(){
+function clear() {
 let clear2 = document.getElementsByClassName('pixel')
-for(let index3 = 0; index3 < clear2.length; index3 +=1){
+for(let index3 = 0; index3 < clear2.length; index3 +=1) {
     let dom3 = clear2[index3];
      dom3.removeAttribute('style');
     }
