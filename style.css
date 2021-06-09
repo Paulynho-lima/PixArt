@@ -1,83 +1,79 @@
-
 .borde {
-    border: black solid 1px;
-}
+   border: black solid 1px;
+ }
 #clear-board {
-    display: block;
-    margin-left: 600px;
-    margin-top: 10px;
-    width: 80px;
-    height: 40px;
-}
-
+  display: block;
+  margin-left: 600px;
+  margin-top: 10px;
+  width: 80px;
+  height: 40px;
+ }
 #color-palette {
   margin-left: 430px;  
   display: table;
   display: inline-flex;
-}
-
-
+ }
 .color {
-    border: black solid 1px;
-    height: 80px;
-    width: 80px;
-    margin: 5px;
-}
+  border: black solid 1px;
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+ }
 .cor1 {
-    background-color:black;
-}   
+  background-color: black;
+ }   
 .cor2 {
-    background-color:red;
-}   
+  background-color: red;
+ }   
 .cor3 {
-    background-color:yellow;
-}   
+  background-color: yellow;
+ }   
 .cor4 {
-    background-color:green;
-}
+  background-color: green;
+ }
 .cor5{
-    background-color: white;
-}
+  background-color: white;
+ }
 .pixel {
-    display: table-cell;
-    display: inline-block;
-    height: 40px;
-    padding: 5px;
-    margin-top: -3px;
-    width: 40px;
-}
+  display: table-cell;
+  display: inline-block;
+  height: 40px;
+  padding: 5px;
+  margin-top: -3px;
+  width: 40px;
+ }
 
 #pixel-board {
-    display: table;
-    padding: 5px;
-    margin-left: 495px;
-    margin-top: 20px;
-}
+  display: table;
+  padding: 5px;
+  margin-left: 495px;
+  margin-top: 20px;
+ }
 .pex {
-    display: table-row;
-    padding: 5px;
-}
+  display: table-row;
+  padding: 5px;
+ }
 .pex2 {
-    display: table-row;
-    padding: 5px;
-}
+  display: table-row;
+  padding: 5px;
+ }
 .pex3 {
-    display: table-row;
-    padding: 5px;
-}
+  display: table-row;
+  padding: 5px;
+ }
 .pex4 {
-    display: table-row;
-    padding: 5px;
-}
+  display: table-row;
+  padding: 5px;
+ }
 .pex5 {
-    display: table-row;
-    padding: 5px;
-}
+  display: table-row;
+  padding: 5px;
+ }
 .selected {
-    width: 100px;
-    height: 100px;
-}   
+  width: 100px;
+  height: 100px;
+ }   
 
 #title {
-    text-align: center;
-}   
+  text-align: center;
+ }   
