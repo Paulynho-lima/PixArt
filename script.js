@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable radix */
 /* eslint-disable max-lines-per-function */
 // eslint-disable-next-line func-names
@@ -24,12 +25,8 @@ window.onload = function () {
   function paintPixel(event) {
     const select = document.querySelector('.selected');
     // eslint-disable-next-line no-param-reassign
-<<<<<<< HEAD
     event.target.style.backgroundColor =
       window.getComputedStyle(select).backgroundColor;
-=======
-    event.target.style.backgroundColor = window.getComputedStyle(select).backgroundColor;
->>>>>>> master
   }
 
   const dom = document.getElementsByClassName('pixel');
