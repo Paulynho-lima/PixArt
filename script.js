@@ -1,3 +1,6 @@
+/* eslint-disable radix */
+/* eslint-disable max-lines-per-function */
+// eslint-disable-next-line func-names
 window.onload = function () {
   const cor = document.querySelector('#color-palette').firstElementChild;
   cor.className = 'color cor1 selected';
@@ -11,6 +14,7 @@ window.onload = function () {
   function changeColor() {
     const selectedColor = document.querySelector('.selected');
     selectedColor.classList.remove('selected');
+    // eslint-disable-next-line no-restricted-globals
     event.target.classList.add('selected');
   }
 
@@ -19,6 +23,7 @@ window.onload = function () {
 
   function paintPixel(event) {
     const select = document.querySelector('.selected');
+    // eslint-disable-next-line no-param-reassign
     event.target.style.backgroundColor =
       window.getComputedStyle(select).backgroundColor;
   }
@@ -41,6 +46,7 @@ window.onload = function () {
   buton.addEventListener('click', clear);
 
   function geraColor() {
+    // eslint-disable-next-line radix
     const r = parseInt(Math.random() * 255);
     const g = parseInt(Math.random() * 255);
     const b = parseInt(Math.random() * 255);
@@ -54,6 +60,7 @@ window.onload = function () {
   }
 };
 
+// eslint-disable-next-line sonarjs/no-unused-collection
 const items = [
   { name: 'Edward', value: 21 },
   { name: 'Sharpe', value: 37 },
@@ -62,13 +69,19 @@ const items = [
   { name: 'Magnetic' },
   { name: 'Zeros', value: 37 },
 ];
-items.sort((a, b) => {
-  if (a.name > b.name) {
-    return 1;
-  }
-  if (a.name < b.name) {
-    return -1;
-  }
-  // a must be equal to b
-  return 0;
-});
+
+function sorts(iten) {
+  iten.sort((a, b) => {
+    if (a.value > b.value) {
+      return a.name;
+    }
+    if (a.value < b.value) {
+      return a.name;
+    }
+    // a must be equal to b
+    return 0;
+  });
+}
+
+// eslint-disable-next-line sonarjs/no-use-of-empty-return-value
+console.log(sorts(items));
