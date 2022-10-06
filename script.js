@@ -71,18 +71,13 @@ const items = [
   { name: 'Zeros', value: 37 },
 ];
 
-function sorts(iten) {
-  iten.sort((a, b) => {
-    if (a.value > b.value) {
-      return a.name;
-    }
-    if (a.value < b.value) {
-      return a.name;
-    }
-    // a must be equal to b
-    return 0;
-  });
-}
-
-// eslint-disable-next-line sonarjs/no-use-of-empty-return-value
-console.log(sorts(items));
+items.sort((a, b) => {
+  if (a.value > b.value) {
+    return a.name;
+  }
+  if (a.value < b.value) {
+    return a.name;
+  }
+  // a must be equal to b
+  return 0;
+});
