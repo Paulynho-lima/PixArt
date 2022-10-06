@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable radix */
 /* eslint-disable max-lines-per-function */
 // eslint-disable-next-line func-names
@@ -24,12 +25,8 @@ window.onload = function () {
   function paintPixel(event) {
     const select = document.querySelector('.selected');
     // eslint-disable-next-line no-param-reassign
-<<<<<<< HEAD
     event.target.style.backgroundColor =
       window.getComputedStyle(select).backgroundColor;
-=======
-    event.target.style.backgroundColor = window.getComputedStyle(select).backgroundColor;
->>>>>>> master
   }
 
   const dom = document.getElementsByClassName('pixel');
@@ -74,18 +71,13 @@ const items = [
   { name: 'Zeros', value: 37 },
 ];
 
-function sorts(iten) {
-  iten.sort((a, b) => {
-    if (a.value > b.value) {
-      return a.name;
-    }
-    if (a.value < b.value) {
-      return a.name;
-    }
-    // a must be equal to b
-    return 0;
-  });
-}
-
-// eslint-disable-next-line sonarjs/no-use-of-empty-return-value
-console.log(sorts(items));
+items.sort((a, b) => {
+  if (a.value > b.value) {
+    return a.name;
+  }
+  if (a.value < b.value) {
+    return a.name;
+  }
+  // a must be equal to b
+  return 0;
+});
