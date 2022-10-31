@@ -1,7 +1,12 @@
 body {
   background: linear-gradient(50deg, #0b1a37 0%, #d7111131 100%);
   box-shadow: 15px 70px 50px rgba(49, 42, 42, 0.871);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 100%;
 }
+
 .borde {
   border: black solid 1px;
 }
@@ -80,4 +85,34 @@ body {
 
 #title {
   text-align: center;
+}
+
+@media (max-width: 999px) {
+  #pixel-board {
+    margin-left: 35%;
+    margin-top: 15%;
+  }
+  #color-palette {
+    margin-left: 29%;
+  }
+
+  #clear-board {
+    margin-top: 15%;
+    width: 120px;
+    height: 80px;
+    margin-left: 45%;
+    font-size: 30px;
+    background: rgba(14, 18, 220, 0.585);
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .mainn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+  }
+  #title {
+    font-size: 70px;
+  }
 }
